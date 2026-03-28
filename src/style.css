@@ -48,18 +48,18 @@ header {
   padding: 30px;
 }
 
-nav {
+nav>ul {
   display: flex;
   gap: 30px;
   align-items: center;
 }
 
-nav>a {
+.header-link {
   text-decoration: none;
   color: #fff;
 }
 
-nav>a:hover {
+.header-link:hover {
   color: #1db954;
 }
 
@@ -74,7 +74,7 @@ nav>a:hover {
   align-items: center;
 }
 
-.song-playlist>img {
+.song-playlist>figure>img {
   width: 100px;
   height: 100px;
   border-radius: 4px;
@@ -84,14 +84,14 @@ nav>a:hover {
   font-weight: bold;
 }
 
-.playlist {
+.playlist>ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   margin-bottom: 40px;
 }
 
-.albums {
+.albums>ul {
   display: flex;
   gap: 20px;
 }
@@ -105,17 +105,17 @@ nav>a:hover {
   background-color: #000;
 }
 
-.albums-container>img {
+.albums-container>figure>img {
   width: 150px;
   height: 180px;
   border-radius: 4px;
 }
 
-.albums-container>p:first-of-type {
+.albums-container>figure>figcaption>p:first-of-type {
   font-weight: bold;
 }
 
-.albums-container>p:last-of-type {
+.albums-container>figure>figcaption>p:last-of-type {
   font-size: 0.9rem;
 }
 
